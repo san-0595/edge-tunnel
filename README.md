@@ -107,8 +107,4 @@
 
 ## 感谢
 
-<<<<<<< HEAD
 [shulng](https://github.com/shulng), [XIU2](https://github.com/XIU2), [zizifn](https://github.com/zizifn), [cmliu](https://github.com/cmliu)
-=======
-[shulng](https://github.com/shulng), [XIU2](https://github.com/XIU2), [zizifn](https://github.com/zizifn), [cmliu](https://github.com/cmliu), [x0uid](https://github.com/x0uid)
->>>>>>> 43fa7b295b2ce32fa162cef9a0c3e209df3e9fe4
