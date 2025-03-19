@@ -452,6 +452,7 @@ geodata-mode: true
 
 rules:
   - GEOIP,CN,DIRECT
+  - GEOSITE,CN,DIRECT
   - RULE-SET,reject-domain,REJECT
   - RULE-SET,reject-ip,REJECT
   - MATCH,🚀 节点选择
