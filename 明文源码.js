@@ -433,11 +433,26 @@ ${代理配置}
   proxies:
 ${代理配置}
 
-# geodata-mode: true
+rule-providers:
+  reject-domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/ImLTHQ/SpotifyAdBlock/master/reject-domain.list"
+    path: ./ruleset/reject-domain.yaml
+    interval: 86400
+
+  reject-ip:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/ImLTHQ/SpotifyAdBlock/master/reject-ip.list"
+    path: ./ruleset/reject-ip.yaml
+    interval: 86400
+
+geodata-mode: true
 
 rules:
   - GEOIP,CN,DIRECT,no-resolve
-# - GEOSITE,CN,DIRECT
+  - GEOSITE,CN,DIRECT
   - RULE-SET,reject-ip,REJECT,no-resolve
   - RULE-SET,reject-domain,REJECT
   - MATCH,🚀 节点选择
