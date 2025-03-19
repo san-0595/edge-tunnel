@@ -433,11 +433,11 @@ ${代理配置}
   proxies:
 ${代理配置}
 
-geodata-mode: true
+# geodata-mode: true
 
 rules:
   - GEOIP,CN,DIRECT,no-resolve
-  - GEOSITE,CN,DIRECT
+# - GEOSITE,CN,DIRECT
   - RULE-SET,reject-ip,REJECT,no-resolve
   - RULE-SET,reject-domain,REJECT
   - MATCH,🚀 节点选择
