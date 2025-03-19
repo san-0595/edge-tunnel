@@ -448,11 +448,10 @@ rule-providers:
     path: ./ruleset/reject-ip.yaml
     interval: 86400
 
+geodata-mode: true
+
 rules:
-  - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - GEOSITE,CN,DIRECT
-# - GEOIP,CLOUDFLARE,DIRECT
   - RULE-SET,reject-domain,REJECT
   - RULE-SET,reject-ip,REJECT
   - MATCH,🚀 节点选择
