@@ -437,14 +437,14 @@ rule-providers:
   reject-domain:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/ImLTHQ/SpotifyAdBlock/master/reject-domain.list"
+    url: "https://raw.githubusercontent.com/ImLTHQ/SpotifyAdBlock/master/clash-rule-set/domain.list"
     path: ./ruleset/reject-domain.yaml
     interval: 86400
 
   reject-ip:
     type: http
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/ImLTHQ/SpotifyAdBlock/master/reject-ip.list"
+    url: "https://raw.githubusercontent.com/ImLTHQ/SpotifyAdBlock/master/clash-rule-set/ip.list"
     path: ./ruleset/reject-ip.yaml
     interval: 86400
 
