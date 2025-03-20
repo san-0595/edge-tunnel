@@ -105,9 +105,14 @@
 
 作者保留随时更新本免责声明的权利, 且不另行通知最新版本的免责声明将发布在本项目的 GitHub 页面上
 
+## 外链
+
+- [Spotify广告屏蔽](https://github.com/ImLTHQ/SpotifyAdBlock)
+
 ## 感谢
 
 - [shulng(代码建议)](https://github.com/shulng)
 - [XIU2(CF测速)](https://github.com/XIU2)
+- [x0uid(Spotify广告屏蔽)](https://github.com/x0uid)
 - [zizifn(原作者)](https://github.com/zizifn)
 - [cmliu(二次开发与ProxyIP提供者)](https://github.com/cmliu)

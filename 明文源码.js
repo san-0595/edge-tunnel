@@ -437,7 +437,24 @@ ${代理配置}
   proxies:
 ${代理配置}
 
+rule-providers:
+  domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/ImLTHQ/SpotifyAdBlock/master/clash-rule-set/domain.list"
+    path: ./ruleset/domain.yaml
+    interval: 86400
+
+  ip:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/ImLTHQ/SpotifyAdBlock/master/clash-rule-set/ip.list"
+    path: ./ruleset/ip.yaml
+    interval: 86400
+
 rules:
+  - RULE-SET,ip,REJECT,no-resolve
+  - RULE-SET,domain,REJECT
   - MATCH,🚀 节点选择
 `;
 
