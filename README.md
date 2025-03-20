@@ -6,11 +6,11 @@
 
 [![Deploy to CF Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ImLTHQ/edge-tunnel)
 
-**注意** 部署 Workers 请务必绑定自定义域名
+**注意:** 部署 Workers 请务必绑定自定义域名
 
 [![Stargazers over time](https://starchart.cc/ImLTHQ/edge-tunnel.svg?variant=adaptive)](https://starchart.cc/ImLTHQ/edge-tunnel)
 
-如果觉得本项目对您有帮助，请点个 Star 支持一下！
+如果觉得本项目对您有帮助, 请点个 Star 支持一下！
 
 ## 使用方法
 
@@ -23,26 +23,26 @@
 8. **生效后导入订阅**
 
 <details>
-<summary><code><strong>「 部署后建议做的 」</strong></code></summary>
+<summary><code><strong>「 建议做的 」</strong></code></summary>
 
 **设置 GitHub Action 同步上游仓库**
 - 来到您 Fork 的仓库
-- 在 `Actions` 选项卡中，点击 `Enable workflow`，选择 `Sync Fork`（同步分支）
-- 启用此 Workflow 可以使您的仓库与原作者的更新保持同步
+- 在 `Actions` 选项卡中, 点击 `Enable workflow`, 选择 `上游同步`
+- 启用此 Workflow 可以使您的仓库与作者的更新保持同步
 </details>
 
 ## 变量说明
 
 | 变量名 | 示例 | 备注 |
 | - | - | - |
-| `SUB_PATH` | `sub` | 订阅路径 |
+| `SUB_PATH` | `订阅路径` | https://域名/订阅路径 |
 | `SUB_UUID` | `550e8400-e29b-41d4-a716-446655440000` | 用于验证订阅请求的 UUID |
-| `TXT_URL` | `https://raw.githubusercontent.com/ImLTHQ/edge-tunnel/main/SpeedTest/HKG.txt` | 优选 IP 的 TXT 地址，支持多个地址，地址之间用换行分隔格式`地址:端口#节点名称`端口不填默认 443，节点名称不填则使用默认节点名称 |
+| `TXT_URL` | `https://raw.githubusercontent.com/ImLTHQ/edge-tunnel/main/SpeedTest/HKG.txt` | 优选 IP 的 TXT 地址, 支持多个地址, 地址之间用换行分隔格式`地址:端口#节点名称`端口不填默认 443, 节点名称不填则使用默认节点名称 |
 | `SUB_NAME` | `节点` | 默认节点名称 |
 | `PROXY_IP` | `ts.hpc.tw:443` | 反代服务器 IP 地址和端口 |
 | `SOCKS5_GLOBAL` | `true`,`false` | 是否启用 SOCKS5 全局反代 |
-| `SOCKS5` | `user:password@address:port` | SOCKS5 代理服务器的连接信息，格式为 `账号:密码@地址:端口` |
-| `FAKE_WEB` | `baidu.com` | 根路径的伪装网站，访问根目录时会跳转到该网站 |
+| `SOCKS5` | `账号:密码@地址:端口` | SOCKS5 代理服务器的连接信息, 格式为 `账号:密码@地址:端口` |
+| `FAKE_WEB` | `baidu.com` | 根路径的伪装网站, 访问根目录时会跳转到该网站 |
 
 <details>
 <summary><code><strong>「 第三方 ProxyIP 」</strong></code></summary>
@@ -105,6 +105,14 @@
 
 作者保留随时更新本免责声明的权利, 且不另行通知最新版本的免责声明将发布在本项目的 GitHub 页面上
 
+## 外链
+
+- [Spotify广告屏蔽](https://github.com/ImLTHQ/SpotifyAdBlock)
+
 ## 感谢
 
-[shulng](https://github.com/shulng), [XIU2](https://github.com/XIU2), [zizifn](https://github.com/zizifn), [cmliu](https://github.com/cmliu)
+- [shulng(代码建议)](https://github.com/shulng)
+- [XIU2(CF测速)](https://github.com/XIU2)
+- [x0uid(Spotify广告屏蔽)](https://github.com/x0uid)
+- [zizifn(原作者)](https://github.com/zizifn)
+- [cmliu(二次开发与ProxyIP提供者)](https://github.com/cmliu)
