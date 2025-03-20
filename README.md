@@ -26,9 +26,9 @@
 <summary><code><strong>「 建议做的 」</strong></code></summary>
 
 **设置 GitHub Action 同步上游仓库**
-- 来到您 Fork 的仓库
-- 在 `Actions` 选项卡中, 点击 `Enable workflow`, 选择 `上游同步`
-- 启用此 Workflow 可以使您的仓库与作者的更新保持同步
+1. 来到您 Fork 的仓库
+2. 在 `Actions` 选项卡中, 点击 `Enable workflow`, 选择 `上游同步`
+3. 启用此 Workflow 可以使您的仓库与作者的更新保持同步
 </details>
 
 ## 变量说明
