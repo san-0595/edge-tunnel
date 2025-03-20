@@ -416,12 +416,8 @@ dns:
   enable: true
   nameserver:
     - 94.140.14.14
-    - 2a10:50c0::ad1:ff
   fallback:
     - 94.140.15.15
-    - 2a10:50c0::ad2:ff
-  listen: 0.0.0.0:53
-  ipv6: true
 
 proxies:
 ${节点配置}
