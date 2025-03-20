@@ -436,6 +436,9 @@ ${代理配置}
   tolerance: 100
   proxies:
 ${代理配置}
+
+rules:
+  - MATCH,🚀 节点选择
 `;
 
   return new Response(配置内容, {
