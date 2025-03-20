@@ -390,6 +390,7 @@ function clash配置文件(hostName) {
   server: ${地址}
   port: ${端口}
   uuid: ${我的UUID}
+  udp: true
   tls: true
   sni: ${hostName}
   network: ws
@@ -419,6 +420,8 @@ dns:
   fallback:
     - 94.140.15.15
     - 2a10:50c0::ad2:ff
+  listen: 0.0.0.0:53
+  ipv6: true
 
 proxies:
 ${节点配置}
