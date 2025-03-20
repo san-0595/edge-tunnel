@@ -414,15 +414,11 @@ function clash配置文件(hostName) {
 dns:
   enable: true
   nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
-    - 2606:4700:4700::1111
-    - 2001:4860:4860::8888
+    - 94.140.14.14
+    - 2a10:50c0::ad1:ff
   fallback:
-    - 1.0.0.1
-    - 8.8.4.4
-    - 2606:4700:4700::1001
-    - 2001:4860:4860::8844
+    - 94.140.15.15
+    - 2a10:50c0::ad2:ff
 
 proxies:
 ${节点配置}
@@ -440,26 +436,6 @@ ${代理配置}
   tolerance: 100
   proxies:
 ${代理配置}
-
-rule-providers:
-  reject-domain:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/ImLTHQ/SpotifyAdBlock/master/clash-rule-set/domain.list"
-    path: ./ruleset/reject-domain.yaml
-    interval: 86400
-
-  reject-ip:
-    type: http
-    behavior: ipcidr
-    url: "https://raw.githubusercontent.com/ImLTHQ/SpotifyAdBlock/master/clash-rule-set/ip.list"
-    path: ./ruleset/reject-ip.yaml
-    interval: 86400
-
-rules:
-  - RULE-SET,reject-ip,REJECT,no-resolve
-  - RULE-SET,reject-domain,REJECT
-  - MATCH,🚀 节点选择
 `;
 
   return new Response(配置内容, {
