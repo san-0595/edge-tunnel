@@ -60,6 +60,7 @@ export default {
       const 最终订阅路径 = encodeURIComponent(订阅路径);
       switch (url.pathname) {
         case `/${最终订阅路径}`:
+        case `/${我的UUID}`:
           const 用户代理 = 访问请求.headers.get("User-Agent").toLowerCase();
           const 配置生成器 = {
             v2ray: v2ray配置文件,
