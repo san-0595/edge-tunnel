@@ -1,3 +1,6 @@
-name = "ed"
+name = "edge-tunnel"
 main = "_worker.js"
-compatibility_date = "2025-03-20"
+compatibility_date = "2025-03-22"
+
+[workers_dev]
+enabled = true
