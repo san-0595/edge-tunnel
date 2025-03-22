@@ -2,7 +2,8 @@ import { connect } from "cloudflare:sockets";
 
 // 配置区块
 let 订阅路径 = "订阅路径";
-let 我的UUID = "66666666-6666-4000-6666-666666666666";
+const 编码订阅路径 = encodeURIComponent(订阅路径);
+let 我的UUID;
 let 默认节点名称 = "节点";
 
 let 优选TXT = [
@@ -26,7 +27,7 @@ let 伪装网页 = "";
 export default {
   async fetch(访问请求, env) {
     订阅路径 = env.SUB_PATH ?? 订阅路径;
-    我的UUID = env.SUB_UUID ?? 我的UUID;
+    我的UUID = env.SUB_UUID ?? 动态UUID();
     默认节点名称 = env.SUB_NAME ?? 默认节点名称;
     优选TXT = env.TXT_URL ? 字符串转数组(env.TXT_URL) : 优选TXT;
     反代IP = env.PROXY_IP ?? 反代IP;
@@ -57,9 +58,8 @@ export default {
         ];
       }
 
-      const 最终订阅路径 = encodeURIComponent(订阅路径);
       switch (url.pathname) {
-        case `/${最终订阅路径}`:
+        case `/${编码订阅路径}`:
         case `/${我的UUID}`:
           const 用户代理 = 访问请求.headers.get("User-Agent").toLowerCase();
           const 配置生成器 = {
@@ -311,6 +311,22 @@ async function 获取SOCKS5账号(SOCKS5) {
 // 其它
 function 字符串转数组(str) {
   return str.split("\n");
+}
+
+function 动态UUID() {
+  const 当前时间 = new Date();
+  // 转换为北京时间 (UTC+8)
+  const 北京时间 = new Date(当前时间.getTime() + 8 * 60 * 60 * 1000);
+  const 年 = 北京时间.getUTCFullYear();
+  const 月 = String(北京时间.getUTCMonth() + 1).padStart(2, "0");
+  const 日 = String(北京时间.getUTCDate()).padStart(2, "0");
+  const 日期 = `${年}${月}${日}`;
+  // 取前 12 位，不足补 0，超过截取
+  const 后12位 = encodeURIComponent(订阅路径)
+  .replace(/%/g, "") // 去掉 %
+  .slice(0, 12)      // 取前 12 位
+  .padEnd(12, "0");  // 不足补 0
+  return `${日期}-0000-4000-0000-${后12位}`;
 }
 
 function 生成项目介绍页面() {
