@@ -315,16 +315,12 @@ function 字符串转数组(str) {
 function 动态UUID() {
   const 当前时间 = new Date();
   // 转换为北京时间 (UTC+8)
-  const 北京时间 = new Date(当前时间.getTime() + 8 * 60 * 60 * 1000);
-  const 年 = 北京时间.getUTCFullYear();
-  const 月 = String(北京时间.getUTCMonth() + 1).padStart(2, "0");
-  const 日 = String(北京时间.getUTCDate()).padStart(2, "0");
-  const 日期 = `${年}${月}${日}`;
-  // 取前 12 位，不足补 0，超过截取
-  const 后12位 = encodeURIComponent(订阅路径)
-  .replace(/%/g, "") // 去掉 %
-  .slice(0, 12)      // 取前 12 位
-  .padEnd(12, "0");  // 不足补 0
+  const 北京时间 = 当前时间.getTime() + 8 * 60 * 60 * 1000;
+  const 日期 = new Date(北京时间).toISOString().slice(0, 10).replace(/-/g, ""); // 格式化为 YYYYMMDD
+  const 后12位 = 订阅路径
+    .replace(/[^a-zA-Z0-9]/g, "") // 去掉非字母数字字符
+    .padEnd(12, "0")             // 不足补 0
+    .slice(0, 12);               // 取前 12 位
   return `${日期}-0000-4000-0000-${后12位}`;
 }
 
