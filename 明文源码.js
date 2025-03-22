@@ -2,7 +2,6 @@ import { connect } from "cloudflare:sockets";
 
 // 配置区块
 let 订阅路径 = "订阅路径";
-const 编码订阅路径 = encodeURIComponent(订阅路径);
 let 我的UUID;
 let 默认节点名称 = "节点";
 
@@ -57,7 +56,7 @@ export default {
           ),
         ];
       }
-
+      const 编码订阅路径 = encodeURIComponent(订阅路径);
       switch (url.pathname) {
         case `/${编码订阅路径}`:
         case `/${我的UUID}`:
