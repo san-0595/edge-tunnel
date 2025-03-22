@@ -415,9 +415,9 @@ function clash配置文件(hostName) {
 dns:
   enable: true
   nameserver:
-    - 94.140.14.14
+    - tls://94.140.14.14
   fallback:
-    - 1.1.1.1
+    - tls://1.1.1.1
 
 proxies:
 ${节点配置}
