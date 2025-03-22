@@ -12,7 +12,7 @@
 
 请确保您已注册 GitHub 和 Cloudflare (简称 CF) 账号
 
-[![Deploy to CF Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ImLTHQ/edge-tunnel)
+[![快速部署](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ImLTHQ/edge-tunnel)
 
 **注意:** 部署 Workers 请务必绑定自定义域名
 
@@ -40,7 +40,7 @@
 | `TXT_URL` | `https://raw.githubusercontent.com/ImLTHQ/edge-tunnel/main/SpeedTest/HKG.txt` | 优选 IP 的 TXT 地址, 支持多个地址, 地址之间用换行分隔格式`地址:端口#节点名称`端口不填默认 443, 节点名称不填则使用默认节点名称 |
 | `SUB_NAME` | `节点` | 默认节点名称 |
 | `PROXY_IP` | `ts.hpc.tw:443` | 反代服务器 IP 地址和端口 |
-| `SOCKS5_GLOBAL` | `true`,`false` | 是否启用 SOCKS5 全局反代 |
+| `SOCKS5_GLOBAL` | `true`或`false` | 是否启用 SOCKS5 全局反代 |
 | `SOCKS5` | `账号:密码@地址:端口` | SOCKS5 代理服务器的连接信息, 格式为 `账号:密码@地址:端口` |
 | `FAKE_WEB` | `baidu.com` | 根路径的伪装网站, 访问根目录时会跳转到该网站 |
 
@@ -107,7 +107,7 @@
 
 ## 感谢
 
-- [shulng](https://github.com/shulng) (代码建议)
-- [XIU2](https://github.com/XIU2) (CF测速)
-- [zizifn](https://github.com/zizifn) (原作者)
-- [cmliu](https://github.com/cmliu) (ProxyIP提供者)
+- [shulng](https://github.com/shulng) 代码建议
+- [XIU2](https://github.com/XIU2) CF测速
+- [zizifn](https://github.com/zizifn) 原作者
+- [cmliu](https://github.com/cmliu) ProxyIP提供者
