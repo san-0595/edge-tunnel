@@ -2,7 +2,7 @@ import { connect } from "cloudflare:sockets";
 
 // 配置区块
 let 订阅路径 = "sub";
-let 我的UUID = "550e8400-e29b-41d4-a716-446655440000";
+let 我的UUID = "66666666-6666-4000-6666-666666666666";
 let 默认节点名称 = "节点";
 
 let 优选TXT = [

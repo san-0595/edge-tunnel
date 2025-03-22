@@ -36,7 +36,7 @@
 | 变量名 | 示例 | 备注 |
 | - | - | - |
 | `SUB_PATH` | `订阅路径` | 订阅地址:`域名/订阅路径`,  订阅路径换成`UUID`同样有效 |
-| `SUB_UUID` | `550e8400-e29b-41d4-a716-446655440000` | 用于验证订阅请求的 UUID |
+| `SUB_UUID` | `66666666-6666-4000-6666-666666666666` | 用于验证的 UUID |
 | `TXT_URL` | `https://raw.githubusercontent.com/ImLTHQ/edge-tunnel/main/SpeedTest/HKG.txt` | 优选 IP 的 TXT 地址, 支持多个地址, 地址之间用换行分隔格式`地址:端口#节点名称`端口不填默认 443, 节点名称不填则使用默认节点名称 |
 | `SUB_NAME` | `节点` | 默认节点名称 |
 | `PROXY_IP` | `ts.hpc.tw:443` | 反代服务器 IP 地址和端口 |
