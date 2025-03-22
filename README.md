@@ -4,10 +4,6 @@
 
 **欢迎各位大佬指正代码中存在的问题！** 
 
-[![Deploy to CF Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ImLTHQ/edge-tunnel)
-
-**注意:** 部署 Workers 请务必绑定自定义域名
-
 [![Stargazers over time](https://starchart.cc/ImLTHQ/edge-tunnel.svg?variant=adaptive)](https://starchart.cc/ImLTHQ/edge-tunnel)
 
 如果觉得本项目对您有帮助, 请点个 Star 支持一下！
@@ -15,6 +11,10 @@
 ## 使用方法
 
 请确保您已注册 GitHub 和 Cloudflare (简称 CF) 账号
+
+[![Deploy to CF Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ImLTHQ/edge-tunnel)
+
+**注意:** 部署 Workers 请务必绑定自定义域名
 
 1. **Fork 本项目** 
 2. **创建 Workers/Pages**

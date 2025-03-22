@@ -417,7 +417,7 @@ dns:
   nameserver:
     - 94.140.14.14
   fallback:
-    - 94.140.15.15
+    - 1.1.1.1
 
 proxies:
 ${节点配置}
