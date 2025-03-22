@@ -110,4 +110,4 @@
 - [shulng](https://github.com/shulng) 代码建议
 - [XIU2](https://github.com/XIU2) CF测速
 - [zizifn](https://github.com/zizifn) 原作者
-- [cmliu](https://github.com/cmliu) ProxyIP提供者
+- [cmliu](https://github.com/cmliu) 参考代码和ProxyIP提供者
