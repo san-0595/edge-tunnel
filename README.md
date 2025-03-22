@@ -107,7 +107,7 @@
 
 ## 感谢
 
-- [shulng(代码建议)](https://github.com/shulng)
-- [XIU2(CF测速)](https://github.com/XIU2)
-- [zizifn(原作者)](https://github.com/zizifn)
-- [cmliu(二次开发与ProxyIP提供者)](https://github.com/cmliu)
+- [shulng](https://github.com/shulng) (代码建议)
+- [XIU2](https://github.com/XIU2) (CF测速)
+- [zizifn](https://github.com/zizifn) (原作者)
+- [cmliu](https://github.com/cmliu) (ProxyIP提供者)
