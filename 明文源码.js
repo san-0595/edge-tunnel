@@ -1,7 +1,7 @@
 import { connect } from "cloudflare:sockets";
 
 // 配置区块
-let 订阅路径 = "sub";
+let 订阅路径 = "订阅路径";
 let 我的UUID = "66666666-6666-4000-6666-666666666666";
 let 默认节点名称 = "节点";
 
