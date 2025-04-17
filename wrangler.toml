@@ -1,4 +1,4 @@
-name = "edge-tunnel"
+name = "edge-tunnel-1"
 type = "javascript"
 workers_dev = false
 main = "_worker.js"
